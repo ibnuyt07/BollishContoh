@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bollish Degen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000000;
+      background-image: url(mobile.jpg); 
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #ffcc80;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background:#284e26;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #ffcc80;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ffcc80;
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      color: #ffcc80;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li::marker {
+      color: #ffcc80;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ffcc80;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #ffcc80;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+  <style>
+    .gallery-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 15px;
+      animation: scrollGallery 25s linear infinite;
+    }
+
+    .gallery-track img {
+      width: 260px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ffcc80;
+    }
+
+    @keyframes scrollGallery {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="font-size: 1.4rem; font-weight: bold;">$BOLLISH</div>
+    <nav>
+      <a href="new.html">NEWS</a>
+      <a href="komunitas.html">COMMUNITY</a>
+      <a href="portofolio">PORTOFOLIO</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>BOLLISH DEGEN</h1>
+    <p>WELCOME TO COMMUNITIY</p>
+  </div>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <p>Komunitas Crypto Berbasis Solana Berfokus Pada Edukasi, Eksperimen, dan Eksplorasi Memecoin. Kami Percaya Sedikit Gila, Sedikit berani, dan Banyak Belajar Resep Utama Menuju Peluang Besar.</p>
+    <p>Bollish - Kalau Waras Doang, Ga Bakal Nemu Peluang.</p>
+  </section>
+
+  <section id="foto">
+    <h2>COMMUNITY GALERY</h2>
+
+    <div class="gallery-wrapper">
+      <div class="gallery-track">
+        <img src="HANS1.jpg"
+          alt="Kelas 1">
+        <img src="pepe.jpg"
+          alt="Kelas 2">
+        <img src="HANS2.jpg"
+          alt="Kelas 3">
+        <!-- duplikat gambar biar loop halus -->
+        <img src="HANS1.jpg"
+          alt="Kelas 1 copy">
+        <img src="pepe.jpg"
+          alt="Kelas 2 copy">
+        <img src="HANS2.jpg"
+          alt="Kelas 3 copy">
+      </div>
+    </div>
+
+
+    <section id="kegiatan">
+      <h2>WHAT WE DO</h2>
+      <ul>
+        <li>Diskusi Harian Seputar Crypto dan Memecoin</li>
+        <li>Riset Bersama dan Analisa Pasar</li>
+        <li>Bedah Proyek & Spotting Peluang Awal</li>
+        <li>Kelas Edukasi Seputar Crypto (Basic – Advance)</li>
+        <li>Bikin konten, Meme, dan Insight Bareng Komunitas</li>
+      </ul>
+    </section>
+
+    <section id="kelas">
+      <h2>KELAS OFFLINE (Preview)</h2>
+      <p><em>Daftar Via WhatsApp – Seat Terbatas.</em></p>
+      <div class="gallery">
+        <img src="HANS1.jpg"
+          alt="Kelas 1">
+        <img src="https://media.vanityfair.com/photos/5f5156490ca7fe28f9ec3f55/master/w_2560%2Cc_limit/feels-good-man-film.jpg"
+          alt="Kelas 2">
+        <img src="kelas.jpg"
+          alt="Kelas 3">
+      </div>
+    </section>
+
+    <section>
+      <h2>WARNING!</h2>
+      <p>Kalau Kamu Masih Ragu, Ga Punya Modal, Ini Mungkin Bukan Tempatmu.
+      <p>Kami Tidak Cari Yang Sempurna. Kami Cari Yang Berani Memulai.</p>
+    </section>
+
+    <footer>
+      <h3>WELCOME TO THE JUNGLE, DEGEN.</h3>
+      <a href="https://t.me/bollish" target="_blank">Telegram</a> |
+      <a href="https://www.instagram.com/bollish_degen?igsh=bnBsY2pja3d6MnR1" target="_blank">Instagram</a> |
+      <a href="https://x.com/bollish_?t=9frLy0qrN2YRO5NdF7Ez8Q&s=09" target="_blank">Twitter/X</a>
+    </footer>
+</body>
+
+</html>
